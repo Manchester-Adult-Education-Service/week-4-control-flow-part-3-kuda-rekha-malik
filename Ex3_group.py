@@ -34,8 +34,9 @@
 # 3. Print a message using your variables and f-strings
 
 # Write your code below:
-
-
+name1= input("What is your name: ")
+favourite_food= input("What is your favourite food: ")
+print(f"Hello, {name1} likes {favourite_food}")
 # Now switch to the next learner's computer!
 
 # -------------------------------------------
