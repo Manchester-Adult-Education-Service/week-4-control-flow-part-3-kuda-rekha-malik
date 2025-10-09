@@ -61,7 +61,11 @@ print(f"Hello, {name1} likes {favourite_food}")
 # 3. Print a message if the condition is True and a different message if False
 
 # Write your code below:
-
+age = int(input("What is your age?"))
+if age > 18:
+    print("You can drive cars")
+elif age < 18:
+    print("You cannot drive cars")
 
 # Now switch to the next learner's computer!
 
