@@ -95,7 +95,14 @@ elif age < 18:
 # 3. Write if-elif-else statements with three different messages
 
 # Write your code below:
-
+house = int (input ("At what age did you buy your first house? "))
+house2 = int (input ("At what age did your dad bought his first house? "))
+if house > house2:
+    print("You've done well. ")
+elif house != house2:
+    print("Amazing, what an achievement! ")
+else:
+    print("Great")
 
 # -------------------------------------------
 # Submitting Your Work
