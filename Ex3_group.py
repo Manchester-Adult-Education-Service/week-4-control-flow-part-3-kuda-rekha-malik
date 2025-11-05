@@ -34,8 +34,9 @@
 # 3. Print a message using your variables and f-strings
 
 # Write your code below:
-
-
+name1= input("What is your name: ")
+favourite_food= input("What is your favourite food: ")
+print(f"Hello, {name1} likes {favourite_food}")
 # Now switch to the next learner's computer!
 
 # -------------------------------------------
@@ -60,7 +61,11 @@
 # 3. Print a message if the condition is True and a different message if False
 
 # Write your code below:
-
+age = int(input("What is your age?"))
+if age > 18:
+    print("You can drive cars")
+elif age < 18:
+    print("You cannot drive cars")
 
 # Now switch to the next learner's computer!
 
@@ -90,7 +95,14 @@
 # 3. Write if-elif-else statements with three different messages
 
 # Write your code below:
-
+house = int (input ("At what age did you purchase your first house? "))
+house2 = int (input ("At what age did your dad purchase his first house? "))
+if house > house2:
+    print("You've done well. ")
+elif house != house2:
+    print("Amazing, what an achievement! ")
+else:
+    print("Great")
 
 # -------------------------------------------
 # Submitting Your Work
@@ -121,9 +133,38 @@
 # Ask for multiple inputs (name, age, favourite colour, food)
 # Use nested if statements or logical operators (and/or)
 # Example scenario: "If age > 15 AND favourite colour is blue, print 'You like blue and are older than 15', else print another message"
-
 # Write your extension code below:
+#STILL WORKING ON THIS:
+age_1= int(input("please enter the first age: "))
+age_2= int(input("please enter the second age: "))
+result_using_and= (age_1>10) and (age_2<20)
+result_using_or= (age_1>10) or (age_2<20)
+print("first age>10 and second age<20:", result_using_and)
+print("first age>10 or second age<20:", result_using_or)
 
+answer_1= (input("What is the capital of Trinidad?: ")).lower()
+answer_2= int(input("What is 6/3: "))
+if answer_1 == "port of spain" and answer_2 == 2:
+    print("Both answers are correct!")
+elif answer_1 == "port of spain":
+    print("First one is correct but check your maths calculation.")
+elif answer_2 == 2:
+    print("The maths calculation is right but check your geography.")
+else:
+    print("Both of your answers are incorrect. Please try again!")
+
+name= (input("What is your name?: "))
+age= int(input("What is your age?: "))
+favourite_colour= (input("What is your favourite colour?: ")).lower()
+favourite_food= (input("What is your favourite food?: ")).lower()
+if age>18 and favourite_colour == "blue":
+    print(f"{name} is an adult and favourite colour is blue")
+elif age<=18 and age>=13 and favourite_food == "baked beans":
+    print(f"{name} is an tenager that likes bake beans")
+elif age<13 and favourite_colour == "green":
+    print(f"{name} is an child that likes green things")
+else:
+    print(f"{name} age {age} favourite food is {favourite_colour} {favourite_food} can't be classified")
 
 # -------------------------------------------
 # Submitting Your Work
